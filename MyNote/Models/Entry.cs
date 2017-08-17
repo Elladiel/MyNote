@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-using MyNote.DAO;
+
 
 namespace MyNote.Models
 {
@@ -13,6 +9,7 @@ namespace MyNote.Models
     {
         private String date;
         private String textEntry;
+        public String ImagePath { get; set; }
         public int Id { get; set; }
 
 

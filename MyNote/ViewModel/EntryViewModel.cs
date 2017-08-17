@@ -9,7 +9,20 @@ namespace MyNote.ViewModel
 {
     public class EntryViewModel : INotifyPropertyChanged
     {
-        // команда добавления нового объекта
+        private string imagePath;
+        public string ImagePath
+        {
+            get
+            {
+                return imagePath;
+            }
+            set
+            {
+                imagePath = value;
+                OnPropertyChanged("ImagePath");
+            }
+        }
+       
         private RelayCommand addCommand;
         public RelayCommand AddCommand
         {
@@ -39,6 +52,20 @@ namespace MyNote.ViewModel
                   }));
             }
         }
+
+        private RelayCommand uploadImageCommand;
+        public RelayCommand UploadImageCommand
+        {
+            get
+            {
+                return uploadImageCommand ??
+                    (uploadImageCommand = new RelayCommand(obj =>
+                    {
+                        //код команды
+                        
+                    }));
+            }
+        } 
 
         private RelayCommand deleteAllCommand;
         public RelayCommand DeleteAllCommand

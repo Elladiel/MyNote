@@ -37,7 +37,10 @@
         <StackPanel Grid.Column="1" DataContext="{Binding SelectedEntry}">
             <TextBox Text="{Binding Date, UpdateSourceTrigger=PropertyChanged}"/>
             <TextBox Text="{Binding TextEntry, UpdateSourceTrigger=PropertyChanged}"/>
+            <Image Margin="0,50,0,0"  Height="100" Width="200" Source="{Binding ImagePath}" />
         </StackPanel>
-        <Button Command="{Binding SaveCommand}" Height="30" Margin="0,246,0,0" Width="80" Grid.Column="1">Save</Button>
+        <Button Command="{Binding SaveCommand}" Height="30" Margin="29,254,132,7" Width="80" Grid.Column="1">Save</Button>
+        <Button Command="{Binding UploadImageCommand}" Height="30" Margin="124,254,32,7" Width="85" Grid.Column="1">UploadImage
+        </Button>
     </Grid>
 </Window>

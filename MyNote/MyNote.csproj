@@ -64,6 +64,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DAO\EntryDap.cs" />
+    <Compile Include="DAO\ImageDAO.cs" />
     <Compile Include="Models\Entry.cs" />
     <Compile Include="ViewModel\EntryViewModel.cs" />
     <Compile Include="ViewModel\RelayCommand.cs" />
